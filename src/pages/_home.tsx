@@ -1,10 +1,15 @@
 import { Outlet } from "react-router";
+import SettingHeader from "~/widgets/SettingHeader";
+import { Header } from "~/widgets/Header";
+import { Footer } from "~/widgets/Footer";
 
 export default function HomePage() {
     return (
         <div>
-            <div className="bg-blue-500 text-white p-4 text-center font-bold"> Header </div>
+            <SettingHeader />
+            <Header />
             <Outlet />
+            <Footer />
         </div>
     )
 }
