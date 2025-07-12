@@ -5,6 +5,7 @@ import Dalat from "~/assets/images/dalat.png";
 import Danang from "~/assets/images/danang.png";
 import Hue from "~/assets/images/hue.png";
 import Hoian from "~/assets/images/hoian.png";
+import { useNavigate } from "react-router";
 
 const TOURS = [
     {
@@ -42,6 +43,10 @@ const TOURS = [
 ]
 
 export function BestSellerTours() {
+    const navigate = useNavigate();
+    function onSeeMore() {
+        navigate("/tours");
+    }
     return (
         <div className="px-20 py-36">
             <p className="text-xl font-normal flex gap-2 mb-8">BEST SELLER TOURS
@@ -52,7 +57,7 @@ export function BestSellerTours() {
             </p>
             <div className="flex justify-between mb-16">
                 <p className="text-[#294D81] text-5xl font-normal max-w-174">Find your place on the coast, in the mountain or in the city.</p>
-                <LinkButton text="See more" textColor="text-[#3562A6]" colorItem="text-[#3562A6]" colorClass="bg-none" />
+                <LinkButton text="See more" textColor="text-[#3562A6]" colorItem="text-[#3562A6]" colorClass="bg-none" onClick={onSeeMore}/>
             </div>
             <div className="grid grid-cols-4 gap-6">
                 {TOURS.map((tour) => (

@@ -3,14 +3,20 @@ import Party from "~/assets/images/party.svg"
 import Message from "~/assets/images/message.svg"
 
 import { LinkButton } from "~/shared/ui/atoms/LinkButton"
+import { useNavigate } from "react-router";
+
 export default function Banner() {
+    const navigate = useNavigate();
+    function onBookNow() {
+        navigate("/payment");
+    }
     return (
         <div className="relative">
             <img src={Banner1} alt="" className="w-full h-screen object-cover " />
             <div className="lg:px-20 px-5 text-white absolute lg:bottom-[10%] lg:left-0 bottom-[30%]">
                 <p className="font-serif lg:text-6xl text-3xl leading-tight lg:pb-[52px] pb-8">A colorful experience <br/> us in Vietnam
                 </p>
-                <LinkButton text="Book now" textColor="text-white" colorItem="text-white" colorClass="bg-[#3562A6]"  />
+                <LinkButton text="Book now" textColor="text-white" colorItem="text-white" colorClass="bg-[#3562A6]" onClick={onBookNow} />
             </div>
             <div className="animate-bounce space-y-[13px] absolute lg:bottom-[6%] -bottom-[30%] right-[32px]">
                 <div

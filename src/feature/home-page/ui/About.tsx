@@ -1,7 +1,12 @@
 import LogoTeam from "~/assets/images/team-logo.png"
 import {LinkButton} from "~/shared/ui/atoms/LinkButton"
+import { useNavigate } from "react-router";
 
 export default function About() {
+    const navigate = useNavigate();
+    function onReadNow() {
+        navigate("/about-us");
+    }
     return (
         <div className="flex lg:flex-row flex-col">
             <img src={LogoTeam} alt="" className="w-1/2 h-full object-cover"/>
@@ -27,7 +32,7 @@ export default function About() {
                         <p className="italic">Partners</p>
                     </div>
                 </div>
-                <LinkButton text="Read now" textColor="text-white" colorItem="text-white" colorClass="bg-[#3562A6]"  />
+                <LinkButton text="Read now" textColor="text-white" colorItem="text-white" colorClass="bg-[#3562A6]" onClick={onReadNow} />
             </div>
         </div>
     )
