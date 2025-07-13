@@ -21,9 +21,9 @@ export function Footer() {
   }
   return (
     <footer className="bg-[#203b64]">
-      <div className="px-20 py-20">
-        <div className=" flex justify-between gap-20 ">
-          <div className="max-w-100">
+      <div className="lg:px-20 lg:py-20 px-5 py-5">
+        <div className=" flex justify-between lg:gap-20 gap-7 ">
+          <div>
             <img src={LogoWhite} alt="" className="w-48 h-24 mb-4"/>
             <p className="text-white text-base font-normal">A team of dedicated travel advisors providing personalized services and assistance to ensure that our customers are entirely delighted with their journeys to explore Vietnam’s splendor.</p>
           </div>
@@ -45,7 +45,7 @@ export function Footer() {
               <p className="text-white text-base font-medium mb-6">About us</p>
             </div>
           </div>
-          <div className="max-w-100">
+          <div>
             <p className="text-[#6189c5] text-[20px] font-semibold mb-6">CONTACT INFO</p>
             <p className="text-white text-base font-semibold mb-2">Da Nang Office</p>
             <p className="text-white text-base font-normal mb-6">132 Ho Xuan Huong, Khue My Ward, Ngu Hanh Son District, DaNang City</p>

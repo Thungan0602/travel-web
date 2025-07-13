@@ -14,12 +14,12 @@ export function OurBlogs() {
         navigate("/blogs");
     }
     return (
-        <div className="px-20 py-36">
-            <div className="flex justify-between mb-16">
-                <p className="text-[#294D81] text-5xl font-normal max-w-174">From our blogs</p>
-                <LinkButton text="See more" textColor="text-[#3562A6]" colorItem="text-[#3562A6]" colorClass="bg-none" onClick={onBlog} />
+        <div className="lg:px-20 lg:py-36 px-5 py-16">
+            <div className="flex justify-between lg:mb-16 mb-6">
+                <p className="text-[#294D81] lg:text-5xl text-4xl font-normal">From our blogs</p>
+                <LinkButton text="See more" textColor="text-[#3562A6]" colorItem="text-[#3562A6]" colorClass="bg-none" animation="lg:block hidden" onClick={onBlog} />
             </div>
-            <div className="flex items-center justify-between mb-16 gap-6">
+            <div className="grid lg:grid-cols-4 grid-cols-[repeat(auto-fit,minmax(200px,1fr))] items-center justify-between lg:mb-16 gap-6">
                 <OurBlog
                     blogImage={Blog1}
                     day="Oct 13, 2024"

@@ -7,13 +7,13 @@ import Medal from "~/assets/images/medal.svg";
 
 export function OurService() {
     return (
-        <div className="relative bg-[#EBF0F8]">
-            <div className="pl-20 pr-10 py-20 w-1/2">
-                <div className="space-y-[24px]">
+        <div className="flex bg-[#EBF0F8]">
+            <div className="lg:pl-20 lg:pr-10 lg:py-20 px-5 py-10 lg:w-1/2 w-full">
+                <div className="space-y-[24px] lg:text-left text-center">
                     <p className="text-[#515151]">OUR SERVICE</p>
-                    <p className="text-[#3562A6] font-serif font-normal text-5xl">What you can expect from us</p>
+                    <p className="text-[#3562A6] font-serif font-normal lg:text-5xl text-4xl">What you can expect from us</p>
                 </div>
-                <div className="grid grid-cols-2 grid-rows-2 gap-x-6 gap-y-[32px] pt-20">
+                <div className="grid grid-cols-2 grid-rows-2 gap-x-6 gap-y-[32px] lg:pt-20 pt-10">
                     <div className="space-y-4">
                         <img src={Flexible} alt="" />
                         <p className="text-xl font-semibold">24/7 Support</p>
@@ -40,7 +40,7 @@ export function OurService() {
                     </div>
                 </div>
             </div>
-            <div className="absolute top-0 right-0 w-1/2 h-full">
+            <div className="w-1/2 h-auto lg:block hidden">
                 <img src={Our} alt="" className="w-full h-full object-cover" />
             </div>
         </div>

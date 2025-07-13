@@ -18,7 +18,7 @@ export function OurDestination() {
         </div>
         <p className="text-[#3562A6] text-5xl font-normal mb-20">The whole Vietnam in here</p>
       </div>
-      <div className="flex items-center gap-16 border-b border-[#bcbcbc] justify-center">
+      <div className="px-20 flex overflow-x-auto whitespace-nowrap scroll-smooth snap-x snap-mandatory items-center gap-16 border-b border-[#bcbcbc]">
         <MenuBar name="da nang" />
         <MenuBar name="ha noi" />
         <MenuBar name="ninh binh" />
@@ -28,17 +28,18 @@ export function OurDestination() {
         <MenuBar name="sa pa" />
         <MenuBar name="nha trang" />
         <MenuBar name="phu quoc" />
+        <MenuBar name="da lat" />
       </div>
 
       <div className="mt-4 relative ">
         <img src={Bridge} alt="" className="w-full" />
-        <p className="text-3xl text-white font-normal absolute top-[10%] left-[7%] w-2/3">
+        <p className="lg:text-3xl text-base text-white font-normal absolute top-[10%] left-[7%] w-2/3">
           <span className="font-bold">Da Nang</span> is one of the most famous vibrant coastal cities in central Vietnam that is home to stunning beaches, modern bridges, and historical landmarks.<br /><br />
           Highlight attractions: <span className="font-bold">Bana hills, Golden Bridge, Marble Mountain, Linh Ung Pagoda, Dragon Bridge,...</span>
         </p>
       </div>
 
-      <div className="py-36">
+      <div className="lg:py-36 py-16">
         <img src={Company} alt="" className="" />
       </div>
     </div>

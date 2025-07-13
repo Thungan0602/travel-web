@@ -4,11 +4,11 @@ import LogoPlane from "~/assets/images/logo-plane.png"
 
 export function Testimonial() {
     return (
-        <div className="relative px-20 py-20 bg-[#203B64]">
+        <div className="relative lg:px-20 lg:py-20 px-5 py-16 bg-[#203B64]">
         <img src={LogoPlane} alt="" className="absolute top-[-3%] right-0"/>
         <p className="text-[#EBF0F8] font-normal">TESTINATIONAL</p>
-        <p className="font-serif font-normal text-5xl text-[#EBF0F8] pt-6 pb-16">What customers talk about us</p>
-        <div className="flex gap-[81px]">
+        <p className="font-serif font-normal lg:text-5xl text-4xl text-[#EBF0F8] pt-6 pb-16">What customers talk about us</p>
+        <div className="flex lg:gap-[80px] gap-10">
             <div className="space-y-8 w-2/5">
                 <div className="flex gap-3">
                     <img src={Star} alt=""/>

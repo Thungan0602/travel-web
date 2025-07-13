@@ -18,10 +18,10 @@ export function Tour({ name, image, time, description, oldPrice, price }: TourPr
         navigate("/tours")
     }
     return (
-        <div onClick={handelClick} className="cursor-pointer">
+        <div onClick={handelClick} className="cursor-pointer ">
             <div className="relative shadow-lg rounded-lg px-2 py-2 transition-all duration-300 
               transform hover:-translate-y-2 hover:scale-105">
-                <div className="flex gap-[6px] absolute lg:top-3 lg:right-7 top-1 right-[2%]">
+                <div className="flex gap-[6px] absolute top-5 right-[6%]">
                     <div className="bg-[#09873E] round rounded-full text-white lg:px-3 lg:py-2 px-2 py-1 w-fit font-extralight text-sm">
                         Daily tour</div>
                     <div className="bg-[#F07132] round rounded-full text-white px-3 py-2 w-fit font-extralight lg:text-sm text-xs">

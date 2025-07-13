@@ -8,9 +8,9 @@ export default function About() {
         navigate("/about-us");
     }
     return (
-        <div className="flex lg:flex-row flex-col">
-            <img src={LogoTeam} alt="" className="w-1/2 h-full object-cover"/>
-            <div className="w-1/2 bg-[#EBF0F8] space-y-8 lg:py-[82px] lg:px-[80px] px-5 py-[52px]">
+        <div className="flex lg:flex-row flex-col ">
+            <img src={LogoTeam} alt="" className="lg:w-1/2 w-full h-auto object-cover"/>
+            <div className="lg:w-1/2 w-full bg-[#EBF0F8] space-y-8 lg:py-[82px] lg:px-[80px] px-5 py-[52px]">
                 <h1 className="text-[#3562A6] font-serif font-normal lg:text-5xl text-3xl">About Travel Buddy</h1>
                 <p className="text-[#515151] font-normal lg:text-base text-sm">Travel Buddy is a young and dynamic DMC in Vietnam
                     founded in September 2023, primarily operating in international and domestic travel and tourism
@@ -32,7 +32,7 @@ export default function About() {
                         <p className="italic">Partners</p>
                     </div>
                 </div>
-                <LinkButton text="Read now" textColor="text-white" colorItem="text-white" colorClass="bg-[#3562A6]" onClick={onReadNow} />
+                <LinkButton text="Read now" textColor="text-white" colorItem="text-white" colorClass="bg-[#3562A6]" animation="flex" onClick={onReadNow} />
             </div>
         </div>
     )

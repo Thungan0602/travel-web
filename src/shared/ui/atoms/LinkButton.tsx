@@ -3,14 +3,15 @@ interface LinkButtonProps {
     textColor: string;
     colorItem: string;
     colorClass: string;
+    animation: string;
     onClick: () => void;
 }
 
-export function LinkButton({ text, textColor, colorItem, colorClass, onClick }: LinkButtonProps) {
+export function LinkButton({ text, textColor, colorItem, colorClass, animation, onClick }: LinkButtonProps) {
     return(
         <div>
             <button
-                className={`${colorClass} border border-[#3562A6] flex text-white py-[19.5px] gap-[10px] pl-8 pr-4 w-fit`}
+                className={`${colorClass} ${animation} border border-[#3562A6] lg:flex text-white py-[19px] gap-[10px] pl-8 pr-4 w-fit`}
                 onClick={onClick}
             >
                 <p className={`font-normal ${textColor} cursor-pointer`}>{text}</p>
